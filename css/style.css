@@ -79,7 +79,7 @@ header {
     padding: 40px 100px;
     background: var(--background-one);
     transition: background 1.5s ease-in-out;
-    z-index: 999;
+    z-index: 100;
     transition: 0.5s;
 }
 
@@ -574,28 +574,31 @@ svg {
     padding-top: 15px;
 }
 
+
 .card a {
-    display: flex;
-    padding: 5px 15px;
-    text-decoration: none;
-    font-weight: 400;
-    color: var(--color-main-one);
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 20px;
-    text-transform: uppercase;
-    border-radius: 5px;
-    border: 2px solid var(--color-main-one);
-    transition: 0.5s;
+    font-size: 25px;
+    color: var(--background-one);
+    border-radius: 50%;
+    background: var(--color-main-one);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    padding: 8px 7px;
+    margin-top: 10px;
+    margin-right: 5%;
+    margin-left: 5%;
+
 }
 
 .card a:hover {
-    background: var(--color-main-one);
-    color: var(--color-main-four);
-    font-weight: 400;
-    transform: scale(1.1);
+    background: var(--background-two);
+    color: var(--color-main-one);
+    border: 1px solid var(--color-main-one);
 }
+
 
 .card a i {
     padding-right: 5px;
@@ -611,7 +614,7 @@ svg {
 .buttom {
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     min-height: 100px;
 }
@@ -656,6 +659,47 @@ svg {
     color: #FFF;
     padding-bottom: 5px;
     max-width: 200px;
+}
+
+
+/* BUTTOM-TO-TOP
+********************************* */
+main {
+    position: relative;
+}
+
+.buttom-to-top a {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 8px 6px;
+    right: 3%;
+    bottom: 50px;
+    position: fixed;
+    z-index: 200;
+    border-radius: 10%;
+    font-size: 1.5rem;
+    color: var(--background-one);
+    background-color: var(--color-main-one);
+    transition: all 0.3s;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.sticky.buttom-to-top a {
+    visibility: visible;
+    opacity: 0.6;
+}
+
+.buttom-to-top a:hover {
+    opacity: 1;
+}
+
+.buttom-to-top i {
+    font-size: 28px;
 }
 
 
@@ -930,21 +974,17 @@ svg {
     .about-right p {
         font-size: 0.9rem;
     }
+
+    /* BUTTOM TO TOP */
+    .buttom-to-top a {
+        right: 10%;
+    }
 }
 
 /* 600px
 ********************************* */
 @media (max-width: 600px) {
 
-    /* .logo {
-        padding-top: 3%;
-    }
-
-    svg {
-        width: 30px;
-        height: 30px;
-    }
- */
     .home-right img {
         background-size: contain;
         object-fit: contain;

@@ -11,6 +11,19 @@ window.addEventListener('scroll', function(){
     
 });
 
+/* BOTÃO PARA ROLAR O SCROLL SENTIO DO TOPO DA PAGINA */
+window.addEventListener('scroll', function(){
+    var backToTop = document.querySelector('.buttom-to-top');
+
+    if(this.scrollY - 70 > 10){
+        backToTop.classList.add('sticky')
+    }else{
+        backToTop.classList.remove('sticky');
+    }
+    
+});
+
+
 /* ATIVANDO/DESATIVANDO MENU MOBILE */
 const menuMobile = document.querySelector('.menu-mobile');
 const navbar = document.querySelector('.navbar');
