@@ -339,6 +339,93 @@ svg {
     opacity: 0;
 }
 
+.tecnolgys {
+    width: 100%;
+    max-width: 350px;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--background-two);
+}
+
+.tecnolgys h5 {
+    color: var(--color-main-one);
+    text-transform: capitalize;
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+.tecnolgys i {
+    padding-right: 5px;
+    font-size: 25px;
+    color: var(--color-main-one);
+}
+
+.tecnolgys .mysql {
+    padding-right: 10px;
+    width: 80px;
+}
+
+.tecnolgys i:hover {
+    color: var(--color-main-five);
+}
+
+.tecnolgys .html {
+    font-size: 25px;
+    color: #DD5239;
+    animation: moveLeftToRight 1s 1s forwards;
+
+}
+
+.tecnolgys .css {
+    font-size: 25px;
+    color: #2489C4;
+    animation: moveLeftToRight 1s 1.1s forwards;
+
+}
+
+.tecnolgys .js {
+    font-size: 25px;
+    color: var(--color-main-one);
+    animation: moveLeftToRight 1s 1.2s forwards;
+
+}
+
+.tecnolgys .php {
+    font-size: 25px;
+    color: #777BB3;
+    animation: moveLeftToRight 1s 1.3s forwards;
+
+}
+
+.tecnolgys .py {
+    font-size: 25px;
+    color: #F7C53D;
+    animation: moveLeftToRight 1s 1.4s forwards;
+
+}
+
+.tecnolgys .rct {
+    font-size: 25px;
+    color: #57D3F5;
+    animation: moveLeftToRight 1s 1.5s forwards;
+
+}
+
+.tecnolgys .rctN {
+    font-size: 25px;
+    color: #784FB0;
+    animation: moveLeftToRight 1s 1.6s forwards;
+
+}
+
+.tecnolgys .android {
+    font-size: 25px;
+    color: #A5BB46;
+    animation: moveLeftToRight 1s 1.6s forwards;
+
+}
+
 .social-media {
     display: flex;
     flex-direction: column;
@@ -501,6 +588,90 @@ svg {
     margin-top: 10px;
     opacity: 0;
     animation: moveLeftToRight 1s 1.7s forwards;
+}
+
+
+
+.about-right .tecnolgys {
+    width: 100%;
+    max-width: 350px;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--background-two);
+}
+
+.about-right .tecnolgys h5 {
+    color: var(--color-main-one);
+    text-transform: capitalize;
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+.about-right .tecnolgys i {
+    padding-right: 10px;
+    font-size: 25px;
+    color: var(--color-main-one);
+}
+
+.about-right .tecnolgys i:hover {
+    color: var(--color-main-five);
+}
+
+.about-right .tecnolgys .html {
+    font-size: 25px;
+    color: #DD5239;
+    animation: moveLeftToRight 1s 1s forwards;
+
+}
+
+.about-right .tecnolgys .css {
+    font-size: 25px;
+    color: #2489C4;
+    animation: moveLeftToRight 1s 1.1s forwards;
+
+}
+
+.about-right .tecnolgys .js {
+    font-size: 25px;
+    color: var(--color-main-one);
+    animation: moveLeftToRight 1s 1.2s forwards;
+
+}
+
+.about-right .tecnolgys .php {
+    font-size: 25px;
+    color: #777BB3;
+    animation: moveLeftToRight 1s 1.3s forwards;
+
+}
+
+.about-right .tecnolgys .py {
+    font-size: 25px;
+    color: #F7C53D;
+    animation: moveLeftToRight 1s 1.4s forwards;
+
+}
+
+.about-right .tecnolgys .rct {
+    font-size: 25px;
+    color: #57D3F5;
+    animation: moveLeftToRight 1s 1.5s forwards;
+
+}
+
+.about-right .tecnolgys .rctN {
+    font-size: 25px;
+    color: #784FB0;
+    animation: moveLeftToRight 1s 1.6s forwards;
+
+}
+
+.about-right .tecnolgys .android {
+    font-size: 25px;
+    color: #A5BB46;
+    animation: moveLeftToRight 1s 1.6s forwards;
+
 }
 
 /* PORTFÓLIO SECTION
