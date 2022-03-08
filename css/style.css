@@ -14,6 +14,7 @@
 
     --background-one: #121212;
     --background-two: #262626;
+    --background-tree: #0D133E;
 
 }
 
@@ -802,6 +803,13 @@ svg {
 }
 
 /* CONTATO-FORM */
+input {
+    color: var(--color-main-tree);
+}
+
+textarea {
+    color: var(--color-main-tree);
+}
 
 .contato-right form {
     width: 100%;
