@@ -234,8 +234,8 @@ svg {
 .shadow {
     position: absolute;
     width: 100%;
-    height: 160px;
-    bottom: -10%;
+    height: 105px;
+    bottom: -12%;
     left: 0;
     z-index: 20;
     background: linear-gradient(to top, var(--background-two), transparent);
@@ -317,7 +317,7 @@ svg {
     font-weight: 400;
     color: var(--color-main-four);
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 12px;
     text-transform: uppercase;
     border-radius: 5px;
     border: 2px solid var(--color-main-one);
@@ -1231,6 +1231,10 @@ main {
 /* 1160px 
 ********************************* */
 @media screen and (max-width: 1200px) {
+    .shadow {
+        display: none;
+    }
+
     .home-left {
         margin-left: 5%;
     }
