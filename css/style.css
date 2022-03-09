@@ -430,6 +430,13 @@ hr {
 
 }
 
+.tecnolgys .git {
+    font-size: 25px;
+    color: #E94F3D;
+    animation: moveLeftToRight 1s 1.6s forwards;
+
+}
+
 .social-media {
     display: flex;
     flex-direction: column;
