@@ -345,7 +345,11 @@ svg {
     align-items: center;
     padding-top: 30px;
     padding-bottom: 10px;
-    border-bottom: 1px solid var(--background-two);
+}
+
+hr {
+    max-width: 300px;
+    opacity: 0.2;
 }
 
 .tecnolgys h5 {
@@ -598,7 +602,6 @@ svg {
     align-items: center;
     padding-top: 30px;
     padding-bottom: 10px;
-    border-bottom: 1px solid var(--background-two);
 }
 
 .about-right .tecnolgys h5 {
@@ -704,12 +707,14 @@ svg {
     max-width: 1300px;
     margin: 0 auto;
     margin-bottom: 3%;
+    padding-right: 3%;
+    padding-left: 3%;
 }
 
 .portfolio>.card {
     flex: 1 1 300px;
     margin-left: 1%;
-    margin-right: 2%;
+    margin-right: 3%;
     color: var(--color-main-five);
 }
 
