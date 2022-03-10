@@ -11,6 +11,7 @@
     --color-main-tree: #FFFFFF;
     --color-main-four: #121212;
     --color-main-five: #CCCCCC;
+    --color-main-six: #0245D9;
 
     --background-one: #121212;
     --background-two: #262626;
@@ -57,6 +58,30 @@ img {
     display: block;
 }
 
+/* PERSONALIZAR BARRA DE ROLAGEM DO NAVEGADOR 
+********************************************** */
+
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-main-six) var(--color-main-one);
+}
+
+/*Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--color-main-one);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--color-main-six);
+    border-radius: 20px;
+    border: 3px solid var(--color-main-one);
+}
 
 /* HEADER
 ********************************* */
@@ -1605,26 +1630,3 @@ main {
         margin-right: 3%;
     }
 }
-
-/* 440px
-********************************* */
-/* @media (max-width: 440px) {
-    .container-footer {
-        padding-bottom: 3%;
-        padding-left: 3%;
-    }
-
-    .container-footer p {
-        padding-bottom: 2%;
-        margin-right: 3%;
-        margin-left: 3%;
-        font-size: 15px;
-        text-align: center;
-    }
-
-    footer .social-icon {
-        padding-left: 3%;
-        padding-bottom: 1%;
-        margin-right: 3%;
-    }
-} */
