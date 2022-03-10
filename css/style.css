@@ -745,6 +745,7 @@ hr {
 
 .portfolio>.card {
     flex: 1 1 300px;
+    max-width: 360px;
     margin-left: 1%;
     margin-right: 3%;
     color: var(--color-main-five);
