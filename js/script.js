@@ -1,3 +1,17 @@
+
+/* EXIBE UM LOADING SIMPLES ATÉ CARREGAR Á PAGINA */
+const loaded = document.querySelector('.loader')
+
+window.addEventListener('load', () => {
+    if(document.readyState === 'complete'){
+        setTimeout(()=>{
+            loaded.style.display = 'none'
+        }, 5000)
+        //loaded.style.display = 'none'
+        console.log('PAGINA CARREGOU')
+    }
+})
+
 /* MUDANÇA DE BACKGROUND NAVBAR */
 /* Quando o usuário rolar para baixo 10px da parte superior do documento, deslize a barra de navegação para baixo */
 window.addEventListener('scroll', function(){

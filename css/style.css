@@ -58,6 +58,39 @@ img {
     display: block;
 }
 
+/* LOADER PARA AGUARDAR CARREGAMENTO DA PÁGINA 
+*********************************************** */
+.loader {
+    background-color: #121212;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
+}
+
+.loading {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border-top: 3px solid orange;
+    animation: loader 1s linear infinite;
+}
+
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /* PERSONALIZAR BARRA DE ROLAGEM DO NAVEGADOR 
 ********************************************** */
 
