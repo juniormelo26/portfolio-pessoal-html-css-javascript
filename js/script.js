@@ -4,11 +4,7 @@ const loaded = document.querySelector('.loader')
 
 window.addEventListener('load', () => {
     if(document.readyState === 'complete'){
-        setTimeout(()=>{
             loaded.style.display = 'none'
-        }, 5000)
-        //loaded.style.display = 'none'
-        console.log('PAGINA CARREGOU')
     }
 })
 
