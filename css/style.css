@@ -1119,11 +1119,12 @@ textarea {
 .contato-row-5 {
     width: 100%;
     display: flex;
-    justify-content: center;
-    padding: 20px;
+    justify-content: flex-start;
+    padding: 10px;
 }
 
 .contato-row-5 button {
+    text-align: left;
     background-color: var(--color-main-one);
     padding: 10px 35px;
     border: 0;
@@ -1133,6 +1134,13 @@ textarea {
     text-transform: capitalize;
     cursor: pointer;
     transition: .4s;
+}
+
+.contato-row-5 span {
+    color: var(--color-main-one);
+    padding-left: 20px;
+    padding-top: 10px;
+    display: none;
 }
 
 .contato-row-5 button:hover {
