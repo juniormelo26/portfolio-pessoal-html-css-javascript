@@ -13,6 +13,8 @@ if (!empty($name) && !empty($email) && !empty($subject) && !empty($message)) {
         $body = "Nome: $name\nEmail: $email\nAssunto: $subject\nMensagem: $message";
         $sender = "From: $email" . "\n" .
             "Reply-To: $email" . "\n";
+        $sender .= "MIME-Version: 1.0" . "\r\n";
+        $sender .= "Content-type:text/html;charset=UTF-8" . "\r\n"; //FORMATA O CABEÇALHO PARA RECEBER CARACTERES ESPECIAIS
 
         if (mail($receiver, $subject, $body, $sender)) {
             echo "Mensagem enviada com sucesso\nEm breve te responderemos, Obrigado!";
