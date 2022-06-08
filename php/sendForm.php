@@ -18,6 +18,7 @@ if (!empty($name) && !empty($email) && !empty($subject) && !empty($message)) {
 
         if (mail($receiver, $subject, $body, $sender)) {
             echo "Mensagem enviada com sucesso\nEm breve te responderemos, Obrigado!";
+            include_once("telegram.php");
         } else {
             echo "Ops, falha ao enviar a mensagem!";
         }
