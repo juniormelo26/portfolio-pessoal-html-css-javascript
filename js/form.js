@@ -17,6 +17,12 @@ form.onsubmit = (e) => {
         response.indexOf("Preencha todos os campos!") != -1
       ) {
         statusTxt.style.color = "red";
+<<<<<<< HEAD
+=======
+        setTimeout(() => {
+          statusTxt.style.display = "none";
+        }, 3000);
+>>>>>>> 25df9e0689ebd6ef720318bf39d52d8148db8be6
       } else {
         form.reset();
         setTimeout(() => {

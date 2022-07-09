@@ -13,9 +13,18 @@ if (!empty($name) && !empty($email) && !empty($subject) && !empty($message)) {
         $body = "Nome: $name\nEmail: $email\nAssunto: $subject\nMensagem: $message";
         $sender = "From: $email" . "\n" .
             "Reply-To: $email" . "\n";
+<<<<<<< HEAD
 
         if (mail($receiver, $subject, $body, $sender)) {
             echo "Mensagem enviada com sucesso\nEm breve te responderemos, Obrigado!";
+=======
+        $sender .= "MIME-Version: 1.0" . "\r\n";
+        $sender .= "Content-type:text/html;charset=UTF-8" . "\r\n"; //FORMATA O CABEÇALHO PARA RECEBER CARACTERES ESPECIAIS
+
+        if (mail($receiver, $subject, $body, $sender)) {
+            echo "Mensagem enviada com sucesso\nEm breve te responderemos, Obrigado!";
+            include_once("telegram.php");
+>>>>>>> 25df9e0689ebd6ef720318bf39d52d8148db8be6
         } else {
             echo "Ops, falha ao enviar a mensagem!";
         }
