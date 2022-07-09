@@ -13,24 +13,24 @@ if (!empty($name) && !empty($email) && !empty($subject) && !empty($message)) {
         $body = "Nome: $name\nEmail: $email\nAssunto: $subject\nMensagem: $message";
         $sender = "From: $email" . "\n" .
             "Reply-To: $email" . "\n";
-<<<<<<< HEAD
+
 
         if (mail($receiver, $subject, $body, $sender)) {
             echo "Mensagem enviada com sucesso\nEm breve te responderemos, Obrigado!";
-=======
-        $sender .= "MIME-Version: 1.0" . "\r\n";
-        $sender .= "Content-type:text/html;charset=UTF-8" . "\r\n"; //FORMATA O CABEÇALHO PARA RECEBER CARACTERES ESPECIAIS
 
-        if (mail($receiver, $subject, $body, $sender)) {
-            echo "Mensagem enviada com sucesso\nEm breve te responderemos, Obrigado!";
-            include_once("telegram.php");
->>>>>>> 25df9e0689ebd6ef720318bf39d52d8148db8be6
+            $sender .= "MIME-Version: 1.0" . "\r\n";
+            $sender .= "Content-type:text/html;charset=UTF-8" . "\r\n"; //FORMATA O CABEÇALHO PARA RECEBER CARACTERES ESPECIAIS
+
+            if (mail($receiver, $subject, $body, $sender)) {
+                echo "Mensagem enviada com sucesso\nEm breve te responderemos, Obrigado!";
+                include_once("telegram.php");
+            } else {
+                echo "Ops, falha ao enviar a mensagem!";
+            }
         } else {
-            echo "Ops, falha ao enviar a mensagem!";
+            echo "Informe um email válido!";
         }
     } else {
-        echo "Informe um email válido!";
+        echo "Preencha todos os campos!";
     }
-} else {
-    echo "Preencha todos os campos!";
 }
